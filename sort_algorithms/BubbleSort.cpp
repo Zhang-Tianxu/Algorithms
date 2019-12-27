@@ -1,5 +1,21 @@
 #include <iostream>
 
+#include <cstdlib> // for srand() & rand
+#include <time.h> // for seed
+
+#include "SortTester.h"
+
+/*
+ * description:
+ *     Sort input array A in place by ascending order.
+ *
+ * inputs:
+ *     An array A and it's length n
+ *
+ * outputs:
+ *     None
+ *
+ */
 template <typename T>
 void BubbleSort(T A[],int n)
 {
@@ -16,20 +32,7 @@ void BubbleSort(T A[],int n)
 			}
 		}
 }
-
 int main()
 {
-	using namespace std;
-	int N;
-	int i;
-	cin >> N;
-	float *A = new float[N];
-	for(i = 0;i<N;i++)
-		cin >> A[i];
-	BubbleSort(A,N);
-	for(i = 0;i<N;i++)
-		cout << A[i] << " ";
-	cout << endl;
-	delete [] A;
-	return 0;
+    SortTester(BubbleSort);
 }

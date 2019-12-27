@@ -3,6 +3,7 @@
  * 求该序列如a[i]+a[i+1]+…+a[j]的子段和的最大值
 */
 #include <iostream>
+#include "tester.h"
 
 #define LISTMAX 1000
 

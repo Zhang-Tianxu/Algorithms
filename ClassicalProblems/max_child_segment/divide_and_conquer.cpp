@@ -4,6 +4,8 @@
 */
 #include <iostream>
 
+#include "tester.h"
+
 template <typename T>
 T max(T a,T b,T c)
 {//return max of a,b,c
@@ -70,6 +72,8 @@ int main()
 	for(i=0;i<N;i++)
 		cin >> list[i];
 	cout << "The max child segment of list is " << max_child_segment(list,1,N) << endl;
+
+    tester();
 	return 0;
 
 }
