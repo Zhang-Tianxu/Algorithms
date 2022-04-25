@@ -2,7 +2,7 @@ cc = gcc
 cpp = g++
 objects = BubbleSort.out MergeSort.out HeapSort.out \
 		  InsertSort.out QuikSort.out SelectSort.out \
-		  test.out
+		  Test.out
 tester = SortTester.cpp
 
 edit: $(objects)
@@ -27,8 +27,8 @@ QuikSort.out:
 SelectSort.out:
 	$(cpp) -o SelectSort.out SelectSort.cpp
 
-test.out:
-	$(cpp) -o test.out test.cpp
+Test.out:
+	$(cpp) -o Test.out Test.cpp
 
 clean :
 	rm $(objects)

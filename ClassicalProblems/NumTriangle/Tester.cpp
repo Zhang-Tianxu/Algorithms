@@ -1,5 +1,5 @@
 #include <iostream>
-#include "tester.h"
+#include "Tester.h"
 
 void tester()
 {
